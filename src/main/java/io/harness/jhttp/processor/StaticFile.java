@@ -23,7 +23,7 @@ public class StaticFile implements RequestProcessor {
         if (!Files.isReadable(file)) {
             return false;
         }
-        // rf
+
         serveFile(response, file);
         return true;
     }
