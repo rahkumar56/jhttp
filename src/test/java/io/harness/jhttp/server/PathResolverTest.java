@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PathResolverTest {
-
+// rf
     @Test
     public void testPathResolver() {
         final PathResolver resolver = new PathResolver(Paths.get("/server/root"));
