@@ -34,7 +34,7 @@ public class SocketHttpResponseTest {
                 .getResourceAsStream("/response/response.txt"));
         assertEquals(expected, new String(bos.toByteArray()));
     }
-
+    // rfrferfr
     @Test(expected = IllegalStateException.class)
     public void testOnlyPrintWriter() throws IOException {
         final SocketHttpResponse response = createResponse();
