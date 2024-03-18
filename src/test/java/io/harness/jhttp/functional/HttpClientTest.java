@@ -24,7 +24,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class HttpClientTest {
-
+    // rferferfer
     private final HttpClient client = HttpClientBuilder.create().build();
 
     private final HttpServer server = new HttpServer(Paths.get("src/test/resources/http-server/server-root"),
