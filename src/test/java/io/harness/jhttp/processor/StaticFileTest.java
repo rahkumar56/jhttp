@@ -28,7 +28,7 @@ public class StaticFileTest {
     @Before
     public void setup() throws IOException, URISyntaxException {
         responseOutput = new ByteArrayOutputStream();
-
+        // rferferfer
         request = mock(HttpRequest.class);
         when(request.resolvePath()).thenReturn(Paths.get(STATIC_FILE.toURI()));
 
