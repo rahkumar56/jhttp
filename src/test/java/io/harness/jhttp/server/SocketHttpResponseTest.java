@@ -16,7 +16,7 @@ import static org.mockito.Mockito.*;
 public class SocketHttpResponseTest {
 
     private ByteArrayOutputStream bos;
-
+// rf
     @Before
     public void setup() throws IOException {
         bos = new ByteArrayOutputStream();
