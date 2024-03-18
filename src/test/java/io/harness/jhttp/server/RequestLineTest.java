@@ -17,7 +17,7 @@ public class RequestLineTest {
     public void emptyLine() {
         RequestLine.parse("");
     }
-
+// r
     @Test(expected = IllegalArgumentException.class)
     public void noUri() {
         RequestLine.parse("GET");
