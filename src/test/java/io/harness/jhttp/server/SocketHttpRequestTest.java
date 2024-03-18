@@ -19,7 +19,7 @@ public class SocketHttpRequestTest {
         assertEquals("/my-site", request.getUri());
         assertEquals("HTTP/1.1", request.getHttpVersion());
     }
-
+    // rf
     private static SocketHttpRequest createRequest(String requestFilePath) throws IOException {
         final Socket socket = mock(Socket.class);
         when(socket.getInputStream()).thenReturn(
