@@ -16,7 +16,6 @@ import static io.harness.jhttp.LambdaUtils.curry;
  *
  */
 public class DirectoryIndex implements RequestProcessor {
-    
     private static final String[] INDEX_FILE_NAMES = new String[] { "index.html", "index.htm" };
     // fr
     @Override
