@@ -20,7 +20,7 @@ public class StaticFileTest {
     private static final URL STATIC_FILE = StaticFileTest.class.getResource("/static-file/some-file.html");
 
     private ByteArrayOutputStream responseOutput;
-
+// fr
     private HttpRequest request;
 
     private HttpResponse response;
