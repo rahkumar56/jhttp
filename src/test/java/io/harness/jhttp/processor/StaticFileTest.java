@@ -18,7 +18,7 @@ import static org.mockito.Mockito.*;
 public class StaticFileTest {
 
     private static final URL STATIC_FILE = StaticFileTest.class.getResource("/static-file/some-file.html");
-
+// rf
     private ByteArrayOutputStream responseOutput;
 
     private HttpRequest request;
