@@ -14,7 +14,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
-
+//e32
 public class StaticFileTest {
 
     private static final URL STATIC_FILE = StaticFileTest.class.getResource("/static-file/some-file.html");
