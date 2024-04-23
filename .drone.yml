@@ -6,19 +6,27 @@ name: pipeline-1
 platform:
   os: linux
   arch: arm64
-  
+
 steps:
 - name: step-1
   image: alpine
   commands:
-  - echo "Hellos from pipeline-1"
+  - echo "Hello from pipeline-1"
   
+  resources:
+    limits:
+      cpu: 1 # 1000 milli CPUs
+      memory: 2048 # 2 Gibibytes of memory
+    requests:
+      cpu: 1
+      memory: 2048
+
 trigger:
   ref:
     - refs/heads/main
     - refs/tags/**
     - refs/pull/**  
-  
+
 
 ---
 kind: pipeline
@@ -32,17 +40,21 @@ steps:
   - name: step-1
     image: alpine
     commands:
-      - echo "Hello from pipeline-2"
+      - echo "Hellos from pipeline-2"
+
+    resources:
+      limits:
+        cpu: 1 # 1000 milli CPUs
+        memory: 2048 # 2 Gibibytes of memory
+      requests:
+        cpu: 1
+        memory: 2048
 
 trigger:
   ref:
     - refs/heads/main
     - refs/tags/**
     - refs/pull/**       
-
-depends_on:
-  - pipeline-1
-      
 
 ---
 kind: pipeline
@@ -58,15 +70,19 @@ steps:
     commands:
       - echo "Hello from pipeline-3"
 
+    resources:
+      limits:
+        cpu: 1 # 1000 milli CPUs
+        memory: 2048 # 2 Gibibytes of memory
+      requests:
+        cpu: 1
+        memory: 2048 
+
 trigger:
   ref:
     - refs/heads/main
     - refs/tags/**
     - refs/pull/**       
-
-depends_on:
-  - pipeline-1 
-
 
 ---
 kind: pipeline
@@ -82,14 +98,19 @@ steps:
     commands:
       - echo "Hello from pipeline-4"
 
+    resources:
+      limits:
+        cpu: 1 # 1000 milli CPUs
+        memory: 2048 # 2 Gibibytes of memory
+      requests:
+        cpu: 1
+        memory: 2048
+
 trigger:
   ref:
     - refs/heads/main
     - refs/tags/**
     - refs/pull/**       
-
-depends_on:
-  - pipeline-1  
 
 ---
 kind: pipeline
@@ -103,17 +124,21 @@ steps:
   - name: step-1
     image: alpine
     commands:
-      - echo "Hello from pipeline-4"
+      - echo "Hello from pipeline-5"
+      
+    resources:
+      limits:
+        cpu: 1 # 1000 milli CPUs
+        memory: 2048 # 2 Gibibytes of memory
+      requests:
+        cpu: 1
+        memory: 2048 
 
 trigger:
   ref:
     - refs/heads/main
     - refs/tags/**
     - refs/pull/**       
-
-depends_on:
-  - pipeline-1  
-
 
 ---
 kind: pipeline
@@ -127,19 +152,19 @@ steps:
   - name: step-1
     image: alpine
     commands:
-      - echo "Hello from pipeline-4"
+      - echo "Hello from pipeline-6"
+      
+    resources:
+      limits:
+        cpu: 1 # 1000 milli CPUs
+        memory: 2048 # 2 Gibibytes of memory
+      requests:
+        cpu: 1
+        memory: 2048
 
 trigger:
   ref:
     - refs/heads/main
     - refs/tags/**
     - refs/pull/**       
-
-depends_on:
-  - pipeline-1  
-  
----
-kind: signature
-hmac: F10E2821BBBEA527EA02200352313BC059445189
-
 ...
