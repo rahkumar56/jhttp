@@ -11,7 +11,7 @@ steps:
 - name: step-1
   image: alpine
   commands:
-  - echo "Hello from pipeline-1"
+  - echo "Helloss from pipeline-1"
   
   resources:
     limits:
@@ -40,7 +40,7 @@ steps:
   - name: step-1
     image: alpine
     commands:
-      - echo "Hello from pipeline-2"
+      - echo "Hellos from pipeline-2"
 
     resources:
       limits:
@@ -55,6 +55,10 @@ trigger:
     - refs/heads/main
     - refs/tags/**
     - refs/pull/**       
+
+depends_on:
+  - pipeline-1
+
 
 ---
 kind: pipeline
@@ -84,6 +88,10 @@ trigger:
     - refs/tags/**
     - refs/pull/**       
 
+depends_on:
+  - pipeline-1 
+
+
 ---
 kind: pipeline
 name: pipeline-4
@@ -111,6 +119,9 @@ trigger:
     - refs/heads/main
     - refs/tags/**
     - refs/pull/**       
+
+depends_on:
+  - pipeline-1  
 
 ---
 kind: pipeline
@@ -140,6 +151,10 @@ trigger:
     - refs/tags/**
     - refs/pull/**       
 
+depends_on:
+  - pipeline-1  
+
+
 ---
 kind: pipeline
 name: pipeline-6
@@ -167,4 +182,12 @@ trigger:
     - refs/heads/main
     - refs/tags/**
     - refs/pull/**       
+
+depends_on:
+  - pipeline-1  
+
+---
+kind: signature
+hmac: F10E2821BBBEA527EA02200352313BC059445189
+
 ...
