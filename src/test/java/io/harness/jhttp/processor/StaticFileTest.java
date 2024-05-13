@@ -22,7 +22,7 @@ public class StaticFileTest {
     private ByteArrayOutputStream responseOutput;
 
     private HttpRequest request;
-
+    //e3d
     private HttpResponse response;
 
     @Before
