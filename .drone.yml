@@ -1,6 +1,6 @@
 ---
 kind: pipeline
-type: drone
+type: docker
 name: default
 
 platform:
@@ -11,5 +11,5 @@ steps:
 - name: another
   image: alpine
   commands:
-  - echo "Hello how r u"
+  - echo "Hello how r u. Yes i m fine"
 
