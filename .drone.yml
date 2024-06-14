@@ -15,6 +15,3 @@ steps:
   - sleep 2
   - echo "Done"
 
----
-# kind: signature
-# hmac: F10E2821BBBEA527EA02200352313BC059445190
