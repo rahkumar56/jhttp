@@ -1,6 +1,6 @@
 ---
 kind: pipeline
-type: ecs
+type: drone
 name: default
 
 platform:
