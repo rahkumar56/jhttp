@@ -1,11 +1,11 @@
 ---
 kind: pipeline
-type: docker
+# type: docker
 name: default
 
 platform:
   os: linux
-  arch: arm64
+  arch: amd64
   
 steps:
 - name: another
@@ -16,5 +16,5 @@ steps:
   - echo "Done"
 
 ---
-kind: signature
-hmac: F10E2821BBBEA527EA02200352313BC059445190
+# kind: signature
+# hmac: F10E2821BBBEA527EA02200352313BC059445190
