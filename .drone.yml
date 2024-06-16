@@ -1,7 +1,7 @@
 ---
 kind: pipeline
 # type: docker
-name: default
+name: Run Pipeline
 
 platform:
   os: linux
@@ -11,5 +11,5 @@ steps:
 - name: Run Step
   image: alpine
   commands:
-  - echo "Hello how r u. Yes i am fine."
+  - echo "Hello how r u. Yes i am fine"
 
