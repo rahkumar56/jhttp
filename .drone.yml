@@ -13,3 +13,10 @@ steps:
   commands:
   - echo "Hello how r u. Yes i am fine."
 
+
+trigger:
+  ref:
+    - refs/heads/main
+    - refs/tags/**
+    - refs/pull/**   
+
