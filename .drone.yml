@@ -11,7 +11,7 @@ steps:
 - name: Run Step
   image: alpine
   commands:
-  - echo "Hello how r u. Yes i am fine"
+  - echo "Hello how r u. Yes i am fines"
 
 
 trigger:
