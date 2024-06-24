@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 /**
- * Miscellaneous methods related to functional programming in Java 8.
+ * Miscellaneous methods related to functional programming in Java 8 .
  * 
  *
  */
