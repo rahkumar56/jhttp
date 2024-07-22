@@ -16,4 +16,4 @@ steps:
 - name: run_1
   image: alpine
   commands:
-  - echo "I am finess"
+  - echo "I am fine ss hehehe"
