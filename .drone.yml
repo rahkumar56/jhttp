@@ -8,12 +8,15 @@ platform:
   arch: arm64
   
 steps:
-- name: another
+- name: run
   image: alpine
   commands:
-  - echo "Hellos"
-  - sleep 2
-  - echo "Done"
+  - echo "Hello how are you"
+
+- name: run_1
+  image: alpine
+  commands:
+  - echo "I am fine"
 
 ---
 kind: signature
