@@ -11,7 +11,7 @@ steps:
 - name: run
   image: alpine
   commands:
-  - echo "Hello how are you"
+  - echo "Hello how are you."
 
 - name: run_1
   image: alpine
