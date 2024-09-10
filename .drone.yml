@@ -10,8 +10,20 @@ platform:
 steps:
 - name: another
   image: alpine
+  environment:
+    onelineSecret:
+      from_secret: onelineSecret
+    MultilineSecret:
+      from_secret: MultilineSecret
+    JsonSecret:
+      from_secret: JsonSecret
+
   commands:
   - echo "Hellos"
   - sleep 2
   - echo "Done"
+  -echo 'prints all secret'
+  - echo $onelineSecret
+  - echo $MultilineSecret
+  - echo $JsonSecret
 
