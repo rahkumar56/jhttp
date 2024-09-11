@@ -20,7 +20,7 @@ steps:
 
   commands:
   - echo "Hellos"
-  - sleep 2
+  - sleep 3
   - echo "Done"
   - echo "prints all secret"
   - echo $onelineSecret
